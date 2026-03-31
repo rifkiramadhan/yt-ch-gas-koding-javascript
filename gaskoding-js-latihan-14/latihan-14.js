@@ -5,3 +5,18 @@
  * Hello World atau Halo Dunia! = 5 kata
  * 012345678910
  */
+
+const JumlahKata = input => {
+    let output = 0;
+
+    for (let i = 0; i < input.length; i++) {
+        const character = input[i];
+        if (character === " " || i === input.length - 1) {
+            output++
+        }
+    }
+
+    return output;
+}
+
+console.log('Jumlah Kata : ', JumlahKata('Hello World dan Hello Dunia!'));
