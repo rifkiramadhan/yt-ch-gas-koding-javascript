@@ -12,7 +12,7 @@ const JumlahKata = input => {
     for (let i = 0; i < input.length; i++) {
         const character = input[i];
         if (character === " " || i === input.length - 1) {
-            output++
+            output++;
         }
     }
 
